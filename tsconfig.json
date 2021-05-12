@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node",
+    "isolatedModules": true,
+    "strict": true,
+    "module": "ES2020",
+    "allowJs": false,
+    "target": "ES2020"
+  },
+  "exclude": ["packages/*/lib", "www"]
+}

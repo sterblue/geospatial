@@ -1,0 +1,24 @@
+{
+  "name": "@starter-typescript-library-monorepo/website",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Vincent Lecrubier <vincent.lecrubier@gmail.com>",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "1.6.1",
+    "@emotion/react": "11.4.0",
+    "@emotion/styled": "11.3.0",
+    "dokz": "2.0.7",
+    "framer-motion": "4.1.13",
+    "next": "10.2.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "compose-function": "3.0.3"
+  }
+}
