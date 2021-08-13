@@ -1,28 +1,23 @@
-# starter-typescript-library-monorepo
+# Sterblue Geospatial
 
-A starter template to create typescript libraries as monorepos
+Geospatial monorepo for geospatial related packages
 
-## Features
+## Packages
 
-  - Typescript
-  - Yarn with node modules resolution
-  - Esbuild
-  - Eslint
-  - Prettier
-  - Jest
-  - Github actions
-  - Dokz
+- [referential](./packages/referential)
+- [coordinates-altitude](./packages/coordinates-altitude)
+- [egm96](./packages/egm96)
+### Auxiliary packages
+
+Packages used for compiling and as auxiliary.
+
+- [babel-preset](./packages/babel-preset)
+- [rollup-config](./packages/rollup-config)
+- [utils-testing](./packages/utils-testing)
+- [development-testing](./packages/development-testing)
+- [waypoints](./packages/waypoints)
+- [angles](./packages/angles)
 
 ## Get started
 
-Initially:
 
-  - In the whole repo, replace all `crubier` with your Github username/organization
-  - In the whole repo, replace all `starter-typescript-library-monorepo` with the name of your Github repo / NPM workspace
-  - In the whole repo, replace all `Vincent Lecrubier <vincent.lecrubier@gmail.com>` with your own identity
-  - On Github, adjust the settings of Github pages to publish the `www/out` folder of the `main` branch
-
-Then to develop:
-
-  - Add packages by copying the example `packages/foo` folder. Replace `foo` in that package with your actual package name.
-  - Add docs by simply adding mdx files in `www/pages`.

@@ -1,0 +1,55 @@
+{
+  "name": "@geospatial/development-testing",
+  "types": "src/index.ts",
+  "publishConfig": {
+    "types": "lib/index.d.ts"
+  },
+  "version": "19.7.0",
+  "private": true,
+  "description": "Testing utils",
+  "license": "UNLICENSED",
+  "author": "Vincent Lecrubier <vincent.lecrubier@sterblue.com>",
+  "main": "src/index.ts",
+  "scripts": {
+    "build:deps": "ultra -r --build --filter + build:lib",
+    "build": "yarn build:rollup && yarn build:types",
+    "build:babel": "babel src --out-dir lib --config-file ./.babelrc.js  --extensions \".ts,.tsx\" --source-maps inline",
+    "build:lib": "rollup -c",
+    "build:rollup": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly ",
+    "clean": "rm -rf lib",
+    "test": "jest"
+  },
+  "dependencies": {
+    "babel-runtime": "6.26.0",
+    "cuid": "2.1.8",
+    "is-uuid": "1.0.2",
+    "lodash": "4.17.20",
+    "mathjs": "6.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.6.4",
+    "@babel/core": "7.11.5",
+    "@babel/plugin-proposal-class-properties": "7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "7.12.1",
+    "@babel/polyfill": "7.6.0",
+    "@babel/preset-env": "7.12.11",
+    "@babel/preset-typescript": "7.12.7",
+    "@geospatial/development-babel-preset": "x.x.x",
+    "@geospatial/development-rollup-config": "x.x.x",
+    "@rollup/plugin-babel": "5.2.2",
+    "@rollup/plugin-commonjs": "17.0.0",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "11.0.1",
+    "babel-jest": "24.9.0",
+    "core-js": "3.6.5",
+    "fs-extra": "8.1.0",
+    "jest": "26.6.3",
+    "jest-image-snapshot": "4.3.0",
+    "rollup": "2.35.1",
+    "rollup-plugin-pnp-resolve": "2.0.0",
+    "ts-jest": "26.4.4",
+    "ts-pnp": "1.2.0",
+    "typescript": "4.1.3"
+  }
+}

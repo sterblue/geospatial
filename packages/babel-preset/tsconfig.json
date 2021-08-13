@@ -1,0 +1,25 @@
+{
+  "compileOnSave": true,
+  "include": ["src"],
+  "exclude": ["**/__tests__/**", "**/__stories__/**"],
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "jsx": "react",
+    "declaration": true,
+    "rootDir": "src",
+    "outDir": "lib",
+    "downlevelIteration": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "strictPropertyInitialization": false,
+    "noImplicitThis": false,
+    "alwaysStrict": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "composite": true
+  },
+  "references": []
+}

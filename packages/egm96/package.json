@@ -1,0 +1,56 @@
+{
+  "name": "@geospatial/geometry-egm96",
+  "types": "src/index.ts",
+  "publishConfig": {
+    "types": "lib/index.d.ts"
+  },
+  "version": "19.7.0",
+  "private": true,
+  "description": "Gets a height from EGM96 geoid model from NGA binary data",
+  "license": "ISC",
+  "author": "Johnathan Leppert <johnathan.leppert@gmail.com>",
+  "main": "src/index.ts",
+  "scripts": {
+    "build:deps": "ultra -r --build --filter + build:lib",
+    "build": "yarn build:rollup && yarn build:types",
+    "build:babel": "babel src --out-dir lib --config-file ./.babelrc.js  --extensions \".ts,.tsx\" --source-maps inline",
+    "build:lib": "rollup -c",
+    "build:rollup": "rollup -c",
+    "build:types": "tsc --emitDeclarationOnly",
+    "clean": "rm -rf lib",
+    "test:manual": "jest",
+    "test:integration": "node integration.test.js"
+  },
+  "dependencies": {
+    "regenerator-runtime": "0.13.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.6.4",
+    "@babel/core": "7.11.5",
+    "@babel/plugin-proposal-class-properties": "7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "7.12.1",
+    "@babel/plugin-syntax-dynamic-import": "7.8.3",
+    "@babel/polyfill": "7.6.0",
+    "@babel/preset-env": "7.12.11",
+    "@babel/preset-typescript": "7.12.7",
+    "@geospatial/development-babel-preset": "x.x.x",
+    "@geospatial/development-rollup-config": "x.x.x",
+    "@rollup/plugin-babel": "5.2.2",
+    "@rollup/plugin-commonjs": "17.0.0",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "11.0.1",
+    "@types/jest": "24.0.13",
+    "babel-jest": "24.9.0",
+    "babel-plugin-dynamic-import-node": "2.3.0",
+    "blob-to-buffer": "1.2.8",
+    "core-js": "3.6.5",
+    "jest": "26.6.3",
+    "node-blob": "0.0.2",
+    "rollup": "2.35.1",
+    "rollup-plugin-file-as-blob": "1.1.2",
+    "rollup-plugin-pnp-resolve": "2.0.0",
+    "ts-jest": "26.4.4",
+    "ts-pnp": "1.2.0",
+    "typescript": "4.1.3"
+  }
+}

@@ -1,12 +1,12 @@
 {
-  "name": "@starter-typescript-library-monorepo/root",
+  "name": "@geospatial/root",
   "version": "1.0.0",
-  "description": "A starter template to create typescript libraries as monorepos",
+  "description": "Sterblue geospatial monorepo",
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/crubier/starter-typescript-library-monorepo.git"
+    "url": "ssh://git@github.com/sterblue/geospatial.git"
   },
-  "author": "Vincent Lecrubier <vincent.lecrubier@gmail.com>",
+  "author": "Luis Calisto <luis.calisto@hotmail.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
@@ -18,7 +18,8 @@
     "www"
   ],
   "scripts": {
-    "build:all": "node ./scripts/build.js"
+    "build:all": "node ./scripts/build.js",
+    "build": "yarn workspaces foreach run build"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.1",
@@ -27,5 +28,9 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-react": "^7.23.2"
-  }
+  },
+  "resolutions": {
+    "mmmagic": "0.5.3"
+  },
+  "packageManager": "yarn@2.4.1"
 }

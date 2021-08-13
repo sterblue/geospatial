@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "declaration": true,
+    "outDir": "lib",
+    "downlevelIteration": true,
+    "strict": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "jsx": "react"
+  },
+  "compileOnSave": true,
+  "include": ["src/**/*"],
+  "exclude": ["**/__tests__"],
+  "references": [
+    {
+      "path": "../angles"
+    },
+    {
+      "path": "../coordinates-altitude"
+    },
+    {
+      "path": "../egm96"
+    },
+    {
+      "path": "../babel-preset"
+    },
+    {
+      "path": "../rollup-config"
+    },
+    {
+      "path": "../development-testing"
+    }
+  ]
+}

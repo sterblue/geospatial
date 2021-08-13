@@ -1,8 +1,8 @@
 {
-  "name": "@starter-typescript-library-monorepo/website",
+  "name": "@geospatial/website",
   "version": "1.0.0",
   "private": true,
-  "author": "Vincent Lecrubier <vincent.lecrubier@gmail.com>",
+  "author": "Luis Calisto <luis.calisto@hotmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
