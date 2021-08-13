@@ -3028,9 +3028,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@geospatial/data-angles@workspace:packages/angles, @geospatial/data-angles@x.x.x":
+"@geospatial/data-angles@workspace:packages/data-angles, @geospatial/data-angles@x.x.x":
   version: 0.0.0-use.local
-  resolution: "@geospatial/data-angles@workspace:packages/angles"
+  resolution: "@geospatial/data-angles@workspace:packages/data-angles"
   dependencies:
     "@babel/cli": 7.6.4
     "@babel/core": 7.11.5
@@ -3062,9 +3062,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@geospatial/data-waypoints@workspace:packages/waypoints, @geospatial/data-waypoints@x.x.x":
+"@geospatial/data-waypoints@workspace:packages/data-waypoints, @geospatial/data-waypoints@x.x.x":
   version: 0.0.0-use.local
-  resolution: "@geospatial/data-waypoints@workspace:packages/waypoints"
+  resolution: "@geospatial/data-waypoints@workspace:packages/data-waypoints"
   dependencies:
     "@babel/cli": 7.6.4
     "@babel/core": 7.11.5
@@ -3094,9 +3094,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@geospatial/development-babel-preset@workspace:packages/babel-preset, @geospatial/development-babel-preset@x.x.x":
+"@geospatial/development-babel-preset@workspace:packages/development-babel-preset, @geospatial/development-babel-preset@x.x.x":
   version: 0.0.0-use.local
-  resolution: "@geospatial/development-babel-preset@workspace:packages/babel-preset"
+  resolution: "@geospatial/development-babel-preset@workspace:packages/development-babel-preset"
   dependencies:
     "@babel/cli": 7.6.4
     "@babel/core": 7.11.5
@@ -3134,9 +3134,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@geospatial/development-rollup-config@workspace:packages/rollup-config, @geospatial/development-rollup-config@x.x.x":
+"@geospatial/development-rollup-config@workspace:packages/development-rollup-config, @geospatial/development-rollup-config@x.x.x":
   version: 0.0.0-use.local
-  resolution: "@geospatial/development-rollup-config@workspace:packages/rollup-config"
+  resolution: "@geospatial/development-rollup-config@workspace:packages/development-rollup-config"
   dependencies:
     "@babel/cli": 7.6.4
     "@babel/core": 7.11.5
@@ -3211,9 +3211,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@geospatial/geometry-coordinates-altitude@workspace:packages/coordinates-altitude, @geospatial/geometry-coordinates-altitude@x.x.x":
+"@geospatial/geometry-coordinates-altitude@workspace:packages/geometry-coordinates-altitude, @geospatial/geometry-coordinates-altitude@x.x.x":
   version: 0.0.0-use.local
-  resolution: "@geospatial/geometry-coordinates-altitude@workspace:packages/coordinates-altitude"
+  resolution: "@geospatial/geometry-coordinates-altitude@workspace:packages/geometry-coordinates-altitude"
   dependencies:
     "@babel/cli": 7.6.4
     "@babel/core": 7.11.5
@@ -3246,9 +3246,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@geospatial/geometry-egm96@workspace:packages/egm96, @geospatial/geometry-egm96@x.x.x":
+"@geospatial/geometry-egm96@workspace:packages/geometry-egm96, @geospatial/geometry-egm96@x.x.x":
   version: 0.0.0-use.local
-  resolution: "@geospatial/geometry-egm96@workspace:packages/egm96"
+  resolution: "@geospatial/geometry-egm96@workspace:packages/geometry-egm96"
   dependencies:
     "@babel/cli": 7.6.4
     "@babel/core": 7.11.5
@@ -3281,9 +3281,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@geospatial/geometry-referential@workspace:packages/referential":
+"@geospatial/geometry-referential@workspace:packages/geometry-referential":
   version: 0.0.0-use.local
-  resolution: "@geospatial/geometry-referential@workspace:packages/referential"
+  resolution: "@geospatial/geometry-referential@workspace:packages/geometry-referential"
   dependencies:
     "@babel/cli": 7.6.4
     "@babel/core": 7.11.5

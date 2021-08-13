@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const data = fs.readFileSync(
-  path.join(__dirname, "../../egm96/src/WW15MGH.DAC")
+  path.join(__dirname, "../../geometry-egm96/src/WW15MGH.DAC")
 );
 
 const encodedData =

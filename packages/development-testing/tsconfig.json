@@ -15,10 +15,10 @@
   "exclude": ["**/__tests__"],
   "references": [
     {
-      "path": "../babel-preset"
+      "path": "../development-babel-preset"
     },
     {
-      "path": "../rollup-config"
+      "path": "../development-rollup-config"
     }
   ]
 }

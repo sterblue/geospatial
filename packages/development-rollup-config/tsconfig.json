@@ -23,7 +23,7 @@
   },
   "references": [
     {
-      "path": "../babel-preset"
+      "path": "../development-babel-preset"
     }
   ]
 }

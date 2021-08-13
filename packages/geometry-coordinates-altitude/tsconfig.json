@@ -15,22 +15,10 @@
   "exclude": ["**/__tests__"],
   "references": [
     {
-      "path": "../angles"
+      "path": "../development-babel-preset"
     },
     {
-      "path": "../coordinates-altitude"
-    },
-    {
-      "path": "../egm96"
-    },
-    {
-      "path": "../babel-preset"
-    },
-    {
-      "path": "../rollup-config"
-    },
-    {
-      "path": "../development-testing"
+      "path": "../development-rollup-config"
     }
   ]
 }
