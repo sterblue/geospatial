@@ -5,7 +5,7 @@
     "access": "public",
     "types": "lib/index.d.ts"
   },
-  "version": "19.10.1",
+  "version": "19.10.2",
   "description": "Sterblue standard babel preset",
   "license": "UNLICENSED",
   "author": "Vincent Lecrubier <vincent.lecrubier@sterblue.com>",
@@ -23,8 +23,7 @@
     "build:rollup": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly ",
     "clean": "rm -rf lib",
-    "version:patch": "npm version patch",
-    "publish": "npm publish"
+    "version:patch": "npm version patch"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "7.12.1",

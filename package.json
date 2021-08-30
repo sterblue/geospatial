@@ -23,7 +23,7 @@
   "scripts": {
     "build:all": "node ./scripts/build.js",
     "build": "yarn workspaces foreach run build",
-    "publish:all": "yarn workspaces foreach run publish"
+    "publish:all": "yarn workspaces foreach npm publish --tolerate-republish"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.22.1",

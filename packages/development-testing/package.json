@@ -3,9 +3,10 @@
   "types": "src/index.ts",
   "publishConfig": {
     "access": "public",
-    "types": "lib/index.d.ts"
+    "types": "lib/index.d.ts",
+    "main": "lib/index.cjs.js"
   },
-  "version": "19.7.0",
+  "version": "19.7.1",
   "description": "Testing utils",
   "license": "UNLICENSED",
   "author": "Vincent Lecrubier <vincent.lecrubier@sterblue.com>",
@@ -24,8 +25,7 @@
     "build:types": "tsc --emitDeclarationOnly ",
     "clean": "rm -rf lib",
     "test": "jest",
-    "version:patch": "npm version patch",
-    "publish": "npm publish"
+    "version:patch": "npm version patch"
   },
   "dependencies": {
     "babel-runtime": "6.26.0",

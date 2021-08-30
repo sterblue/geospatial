@@ -3,9 +3,10 @@
   "types": "src/index.ts",
   "publishConfig": {
     "access": "public",
-    "types": "lib/index.d.ts"
+    "types": "lib/index.d.ts",
+    "main": "lib/index.cjs.js"
   },
-  "version": "19.7.1",
+  "version": "19.7.7",
   "description": "referential conversions",
   "license": "MIT",
   "author": "Luis Calisto <luis.calisto@hotmail.com>",
@@ -24,8 +25,7 @@
     "build:types": "tsc --emitDeclarationOnly",
     "clean": "rm -rf lib",
     "test": "jest",
-    "version:patch": "npm version patch",
-    "publish": "npm publish"
+    "version:patch": "npm version patch"
   },
   "dependencies": {
     "@geospatial/data-angles": "x.x.x",

@@ -5,7 +5,7 @@
     "access": "public",
     "types": "lib/index.d.ts"
   },
-  "version": "19.7.0",
+  "version": "19.7.1",
   "description": "Sterblue standard rollup config",
   "license": "UNLICENSED",
   "author": "Vincent Lecrubier <vincent.lecrubier@sterblue.com>",
@@ -24,8 +24,7 @@
     "build:types": "tsc --emitDeclarationOnly ",
     "clean": "rm -rf lib",
     "test": "jest",
-    "version:patch": "npm version patch",
-    "publish": "npm publish"
+    "version:patch": "npm version patch"
   },
   "dependencies": {
     "@rollup/plugin-babel": "5.2.2",
