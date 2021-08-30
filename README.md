@@ -20,10 +20,9 @@ Packages used for compiling and other auxiliary tasks.
 
 ## Get started
 
-Just add the package to your dependencies `yarn add @geospatial/geometry-referential` or edit your `package.json` and enjoy it. More info can be found inside the package folder.
+Just add the required package to your dependencies e.g. `yarn add @geospatial/geometry-referential` or add it directly editing your `package.json` enjoy! More info can be found inside the package folder.
 
-An example can be:
-
+The example below show how to use both [Geometry Referential](./packages/geometry-referential) and [Coordinates altitude](./packages/geometry-coordinates-altitude) 
 ```javascript
 
 import { addAltitudeToGeojson } from "@geospatial/geometry-coordinates-altitude";
@@ -52,7 +51,7 @@ import { convert, convertAsync } from "@geospatial/geometry-referential";
                 "properties": {
                   "name": "Cote d'ivoire"
                 },
-                "geometry": { "type": "Point", "coordinates": [-4.395542,5.332077] }
+                "geometry": { "type": "Point", "coordinates": [-4.395542, 5.332077] }
               }
             ]
       };
