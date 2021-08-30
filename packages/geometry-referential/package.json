@@ -2,15 +2,19 @@
   "name": "@geospatial/geometry-referential",
   "types": "src/index.ts",
   "publishConfig": {
+    "access": "public",
     "types": "lib/index.d.ts"
   },
-  "version": "19.7.0",
-  "private": true,
+  "version": "19.7.1",
   "description": "referential conversions",
-  "repository": "https://github.com/sterblue/geospatial.git",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "Luis Calisto <luis.calisto@hotmail.com>",
   "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sterblue/geospatial"
+  },
+  "homepage": "https://github.com/sterblue/geospatial",
   "scripts": {
     "build:deps": "ultra -r --build --filter + build:lib",
     "build": "yarn build:lib && yarn build:types",
@@ -19,7 +23,9 @@
     "build:rollup": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
     "clean": "rm -rf lib",
-    "test": "jest"
+    "test": "jest",
+    "version:patch": "npm version patch",
+    "publish": "npm publish"
   },
   "dependencies": {
     "@geospatial/data-angles": "x.x.x",

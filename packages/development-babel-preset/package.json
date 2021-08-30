@@ -2,14 +2,19 @@
   "name": "@geospatial/development-babel-preset",
   "types": "src/index.ts",
   "publishConfig": {
+    "access": "public",
     "types": "lib/index.d.ts"
   },
-  "version": "19.10.0",
-  "private": true,
+  "version": "19.10.1",
   "description": "Sterblue standard babel preset",
   "license": "UNLICENSED",
   "author": "Vincent Lecrubier <vincent.lecrubier@sterblue.com>",
   "main": "lib/index.cjs.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sterblue/geospatial"
+  },
+  "homepage": "https://github.com/sterblue/geospatial",
   "scripts": {
     "build:deps": "ultra -r --build --filter + build:lib",
     "build": "yarn build:rollup && yarn build:types",
@@ -17,7 +22,9 @@
     "build:lib": "rollup -c",
     "build:rollup": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly ",
-    "clean": "rm -rf lib"
+    "clean": "rm -rf lib",
+    "version:patch": "npm version patch",
+    "publish": "npm publish"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "7.12.1",

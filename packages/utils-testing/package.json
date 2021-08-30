@@ -2,14 +2,20 @@
   "name": "@geospatial/utils-testing",
   "types": "src/index.ts",
   "publishConfig": {
+    "access": "public",
     "types": "lib/index.d.ts"
   },
   "version": "19.7.0",
-  "private": true,
+  "private": false,
   "description": "Testing utils",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "Vincent Lecrubier <vincent.lecrubier@sterblue.com>",
   "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sterblue/geospatial"
+  },
+  "homepage": "https://github.com/sterblue/geospatial",
   "scripts": {
     "build:deps": "ultra -r --build --filter + build:lib",
     "build": "yarn build:rollup && yarn build:types",
@@ -18,7 +24,9 @@
     "build:rollup": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
     "clean": "rm -rf lib",
-    "test": "jest"
+    "test": "jest",
+    "version:patch": "npm version patch",
+    "publish": "npm publish"
   },
   "dependencies": {
     "lodash": "4.17.20",

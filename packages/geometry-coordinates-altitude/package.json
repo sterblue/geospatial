@@ -2,14 +2,19 @@
   "name": "@geospatial/geometry-coordinates-altitude",
   "types": "src/index.ts",
   "publishConfig": {
+    "access": "public",
     "types": "lib/index.d.ts"
   },
-  "version": "19.8.0",
-  "private": true,
+  "version": "19.8.1",
   "description": "A utility to get altitude from a pair of coordinates",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "author": "Luis Calisto <luis.calisto@hotmail.com>",
   "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sterblue/geospatial"
+  },
+  "homepage": "https://github.com/sterblue/geospatial",
   "scripts": {
     "build:deps": "ultra -r --build --filter + build:lib",
     "build": "yarn build:rollup && yarn build:types",
@@ -18,7 +23,9 @@
     "build:rollup": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
     "clean": "rm -rf lib",
-    "test": "jest"
+    "test": "jest",
+    "version:patch": "npm version patch",
+    "publish": "npm publish"
   },
   "dependencies": {
     "bluebird": "3.5.4",
