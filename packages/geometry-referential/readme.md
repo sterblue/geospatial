@@ -145,7 +145,7 @@ new THREE.Vector3(-1.9425367, 46.68808, 0);
 
 ## Coordinate transformations
 
-At this moment this package uses a modified version of proj4js (http://proj4js.org) available at: https://github.com/lcalisto/proj4js This is a normal proj4js with tha ability of transforming from and to geocentric coordinates. This means that most of coordinate transformations are possible.
+At this moment this package uses proj4js (http://proj4js.org) available at: https://github.com/proj4js/proj4js This means that most of coordinate transformations are possible.
 
 One example of transforming from 4326 (WGS84) to 3763 (Portugal TM06) can be described as
 
