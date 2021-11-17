@@ -1,6 +1,8 @@
 # **Geometry Referential**
 
-A package to convert coordinates; formats and altitudes.
+A package to convert coordinates; formats and altitudes. 
+
+FOSS4G 2021 presentation on this package can be seen here: https://www.youtube.com/watch?v=l6B5MyILMpM 
 
 ---
 
