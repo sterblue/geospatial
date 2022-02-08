@@ -10,7 +10,7 @@ FOSS4G 2021 presentation on this package can be seen here: https://www.youtube.c
 
 **Referential** is a package that can deal with **format** conversions; **coordinate** transformations and **altitude** conversions.
 
-There are two main curried functions, a **syncronous** function: `convert(from,to)(coordinates)` and one **asyncronous** function: `convertAsync(from,to)(coordinates)` althought both functions (sync and async) have the same signature, **altitude** conversions are only performed when using the asyncronous function (convertAsync). We use curried functions to make it easier, and more eficient, to process big amonts of points. We can create one conversion and then apply it to several points, for example:
+There are two main curried functions, a **synchronous** function: `convert(from,to)(coordinates)` and one **asynchronous** function: `convertAsync(from,to)(coordinates)` althought both functions (sync and async) have the same signature, **altitude** conversions are only performed when using the asynchronous function (convertAsync). We use curried functions to make it easier, and more eficient, to process big amonts of points. We can create one conversion and then apply it to several points, for example:
 
 ```typescript
 const conversion1 = convert(from, to);
