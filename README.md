@@ -2,6 +2,8 @@
 
 Geospatial monorepo for geospatial related packages
 
+See @lcalisto 's presentation about it at FOSS4G 2021 here https://www.youtube.com/watch?v=l6B5MyILMpM
+
 ## Packages
 
 - [Geometry Referential](./packages/geometry-referential)
@@ -69,7 +71,7 @@ import { convert, convertAsync } from "@geospatial/geometry-referential";
          * and convert from arrayXYZ into objectXYZ
          * Using @geospatial/geometry-referential
         **************************/
-        const myConvertion = await convertAsync(
+        const myConversion = await convertAsync(
             {
                 system: {
                   type: "reference",
@@ -91,7 +93,7 @@ import { convert, convertAsync } from "@geospatial/geometry-referential";
                 }
               }
           );
-        result = await myConvertion(result.features[0].geometry.coordinates);
+        result = await myConversion(result.features[0].geometry.coordinates);
         console.log(result);
       }
       asyncFunction();
