@@ -8,9 +8,9 @@ FOSS4G 2021 presentation on this package can be seen here: https://www.youtube.c
 
 ## What is referential package?
 
-**Referential** is a package that can deal with **format** convertions; **coordinate** transformations and **altitude** convertions.
+**Referential** is a package that can deal with **format** conversions; **coordinate** transformations and **altitude** conversions.
 
-There are two main curried functions, a **syncronous** function: `convert(from,to)(coordinates)` and one **asyncronous** function: `convertAsync(from,to)(coordinates)` althought both functions (sync and async) have the same signature, **altitude** convertions are only performed when using the asyncronous function (convertAsync). We use curried functions to make it easier, and more eficient, to process big amonts of points. We can create one conversion and then apply it to several points, for example:
+There are two main curried functions, a **syncronous** function: `convert(from,to)(coordinates)` and one **asyncronous** function: `convertAsync(from,to)(coordinates)` althought both functions (sync and async) have the same signature, **altitude** conversions are only performed when using the asyncronous function (convertAsync). We use curried functions to make it easier, and more eficient, to process big amonts of points. We can create one conversion and then apply it to several points, for example:
 
 ```typescript
 const conversion1 = convert(from, to);
@@ -24,7 +24,7 @@ const coordinates5 = conversion1(coordinatesE);
 
 ---
 
-## Format convertions
+## Format conversions
 
 All supported formats can be transformed between them.
 
@@ -52,7 +52,7 @@ Please check [src/types.ts](src/types.ts) to see all supported formats.
 We can transform a coordinate from array to object like:
 
 ```typescript
-const myConvertion = convert(
+const myConversion = convert(
   {
     format: {
       type: "arrayXYZ"
@@ -64,10 +64,10 @@ const myConvertion = convert(
     }
   }
 );
-const result = myConvertion([-1.9425367, 46.68808, 0]);
+const result = myConversion([-1.9425367, 46.68808, 0]);
 ```
 
-Since convert is a curried function if you dont need to reuse this convertion in multiple objects you can just do:
+Since convert is a curried function if you dont need to reuse this conversion in multiple objects you can just do:
 
 ```typescript
 const result = convert(
@@ -90,10 +90,10 @@ In both cases the result will be:
 { x: -1.9425367, y: 46.68808, z: 0 }
 ```
 
-Any format convertion ncan be performed with both SYNC and ASYNC functions. We can rewrite the previous example uing the async function as
+Any format conversion ncan be performed with both SYNC and ASYNC functions. We can rewrite the previous example uing the async function as
 
 ```typescript
-const myConvertion = await convertAsync(
+const myConversion = await convertAsync(
   {
     format: {
       type: "arrayXYZ"
@@ -106,7 +106,7 @@ const myConvertion = await convertAsync(
   }
 );
 
-const result = await myConvertion([-1.9425367, 46.68808, 0]);
+const result = await myConversion([-1.9425367, 46.68808, 0]);
 ```
 
 Its possible to use this functions with both Cesium and Three coordinate objects:
@@ -117,7 +117,7 @@ import cesium from "cesium";
 
 const cesiumPointObject = new cesium.Cartographic(-1.9425367, 46.68808, 0);
 
-const myConvertion = convert(
+const myConversion = convert(
   {
     format: {
       type: "cesiumCartographic",
@@ -132,7 +132,7 @@ const myConvertion = convert(
   }
 );
 
-const result = myConvertion(cesiumPointObject);
+const result = myConversion(cesiumPointObject);
 ```
 
 For this example the result should be an object like
@@ -152,7 +152,7 @@ At this moment this package uses proj4js (http://proj4js.org) available at: http
 One example of transforming from 4326 (WGS84) to 3763 (Portugal TM06) can be described as
 
 ```typescript
-const myConvertion = convert(
+const myConversion = convert(
   {
     system: {
       type: "reference",
@@ -175,7 +175,7 @@ const myConvertion = convert(
     }
   }
 );
-const result = myConvertion([
+const result = myConversion([
   -7.56233996602137,
   38.96618001296369,
   2.9946155063807964
@@ -188,7 +188,7 @@ In this example the result should be:
 [49467.31334521535, -77790.87043755408, 2.9946155063807964];
 ```
 
-For coordinate transformations and altitude convertions we must always provide _system_ object
+For coordinate transformations and altitude conversions we must always provide _system_ object
 
 ```json
     system: {
@@ -207,7 +207,7 @@ The folowing example transforms from WGS84 to EPSG:3763 (Portugal TM06) and chan
 
 ```typescript
 const testingPointObject = "38°57'58\" E, 7°33'44\" S, 2.9946155045181513 m";
-const myconvertion = await convertAsync(
+const myconversion = await convertAsync(
   {
     system: {
       type: "reference",
@@ -229,7 +229,7 @@ const myconvertion = await convertAsync(
     }
   }
 );
-const result = await myconvertion(testingPointObject);
+const result = await myconversion(testingPointObject);
 ```
 
 In this example the result should be:
@@ -245,7 +245,7 @@ Its possible to transform from and to local coordinate systems. When dealing wit
 The following example transforms a local coordinate system to WGS84
 
 ```typescript
-const myConvertion = await convertAsync(
+const myConversion = await convertAsync(
   {
     system: {
       type: "local",
@@ -307,7 +307,7 @@ The folowing image describes diferences between the three diferent altitudes.
 The folowing example converts altitude from default to cesiumTerrain
 
 ```typescript
-const myConvertion = await convertAsync(
+const myConversion = await convertAsync(
   {
     system: {
       type: "reference",
@@ -329,7 +329,7 @@ const myConvertion = await convertAsync(
     }
   }
 );
-const result = await myConvertion([-7.49024, 38.41922, 0]);
+const result = await myConversion([-7.49024, 38.41922, 0]);
 ```
 
 In this example the result should be:
