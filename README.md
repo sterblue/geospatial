@@ -2,7 +2,7 @@
 
 Geospatial monorepo for geospatial related packages
 
-See @lcalisto 's presentation about it at FOSS4G 2021 here https://www.youtube.com/watch?v=l6B5MyILMpM
+See @lcalisto's presentation about it at FOSS4G 2021 here https://www.youtube.com/watch?v=l6B5MyILMpM
 
 ## Packages
 
